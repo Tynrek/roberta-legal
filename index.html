@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>Privacy Policy / Datenschutzerklärung – Roberta (Discord bot)</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+      color: #1a1a1a;
+      background: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e6e6e6; background: #16171a; }
+      a { color: #7aa2f7; }
+      code, .box { background: #22242a; }
+      hr { border-color: #333; }
+    }
+    h1 { font-size: 1.7rem; margin-bottom: 0.2rem; }
+    h2 { font-size: 1.25rem; margin-top: 2.2rem; border-bottom: 1px solid #ddd; padding-bottom: 0.3rem; }
+    h3 { font-size: 1.05rem; margin-top: 1.4rem; }
+    .lang-note { color: #888; font-size: 0.9rem; margin-top: 0; }
+    .updated { color: #888; font-size: 0.9rem; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+    th, td { border: 1px solid #ccc; padding: 0.5rem 0.6rem; text-align: left; vertical-align: top; }
+    th { background: #f3f4f6; }
+    @media (prefers-color-scheme: dark) { th { background: #22242a; } th, td { border-color: #383b42; } }
+    code { padding: 0.1rem 0.35rem; border-radius: 4px; background: #f0f0f0; font-size: 0.9em; }
+    .box { background: #f6f8fa; border-radius: 8px; padding: 1rem 1.2rem; margin: 1.2rem 0; }
+    hr { border: none; border-top: 1px solid #ddd; margin: 3.5rem 0; }
+    footer { margin-top: 3rem; color: #888; font-size: 0.85rem; }
+    .skip { font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <p class="skip"><a href="#de">Deutsche Version unten ↓</a></p>
+
+  <h1>Privacy Policy</h1>
+  <p class="lang-note">for the Discord bot <strong>Roberta</strong> on the “Deutsch lernen!” server</p>
+  <p class="updated">Last updated: 11 June 2026 — In case of doubt, the German version below prevails.</p>
+
+  <h2>1. Controller</h2>
+  <p>The controller for the data processing carried out by the bot “Roberta” is the operator of the “Deutsch lernen!” Discord server.</p>
+  <div class="box">
+    Contact: reach an admin via the “Deutsch lernen!” Discord server — through the ticket system or a message to the team.
+  </div>
+
+  <h2>2. What is Roberta?</h2>
+  <p>
+    Roberta is a self-developed, volunteer-run Discord bot. She runs exclusively on the
+    “Deutsch lernen!” server and is not offered publicly for adding to other servers.
+    Roberta welcomes new members, posts recurring learning content (e.g. “Word of the Day”),
+    assists moderation, and replies to direct mentions (<code>@Roberta</code>) in a few
+    designated channels.
+  </p>
+
+  <h2>3. What data does Roberta process, and why?</h2>
+  <p>Roberta is designed for data minimisation and stores only what her functions require:</p>
+  <table>
+    <thead>
+      <tr><th>Data</th><th>Purpose</th><th>Storage</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Discord user ID, server ID, join and last-activity timestamps, welcome-DM status</td>
+        <td>Welcoming new members and a one-time welcome message in case of inactivity</td>
+        <td>In the bot database, deleted no later than 30 days after leaving the server</td>
+      </tr>
+      <tr>
+        <td>Discord display name / username</td>
+        <td>Display and attribution in support tickets and self-created temporary voice channels</td>
+        <td>In the bot database, deleted no later than 30 days after leaving the server</td>
+      </tr>
+      <tr>
+        <td>On a direct mention (<code>@Roberta</code>): an excerpt of the message and Roberta’s reply</td>
+        <td>Accountability for moderation (audit log), abuse and safety protection</td>
+        <td>In the bot database, deleted no later than 30 days after leaving the server</td>
+      </tr>
+      <tr>
+        <td>A few short self-statements a user voluntarily tells Roberta about themselves (e.g. reason for learning, region, hobby)</td>
+        <td>So Roberta can refer back to them appropriately in later replies</td>
+        <td>In the bot database, deleted no later than 30 days after leaving the server</td>
+      </tr>
+      <tr>
+        <td>Participation in temporary voice channels (join/leave time)</td>
+        <td>Automatic closing of empty channels and moderation overview</td>
+        <td>In the bot database, deleted no later than 30 days after leaving the server</td>
+      </tr>
+      <tr>
+        <td>Cached level from the MEE6 bot</td>
+        <td>Trust threshold: only established members trigger certain functions</td>
+        <td>Short-lived cache (minutes to hours)</td>
+      </tr>
+      <tr>
+        <td>Aggregated, anonymous statistics (joins/leaves per day, messages and voice minutes per channel per day) <strong>with no personal reference</strong></td>
+        <td>Server statistics and improving the service</td>
+        <td>Retained, as there is no personal reference</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    <strong>Message content is generally not stored permanently.</strong> The only exceptions
+    are the two cases above (mention excerpt in the audit log and voluntary self-statements).
+    Roberta reads ongoing messages only to react to direct mentions, commands and safety
+    events (e.g. spam); afterwards they are discarded.
+  </p>
+
+  <h2>4. Privileged Discord permissions (Privileged Intents)</h2>
+  <p>For Roberta to work, she uses two permissions that Discord protects specifically:</p>
+  <ul>
+    <li><strong>Server Members Intent:</strong> required to detect joins, welcome new members
+      and delete the data of departed members on time.</li>
+    <li><strong>Message Content Intent:</strong> required to react to direct mentions, commands
+      and spam. Content is only processed, not stored permanently (see section 3).</li>
+  </ul>
+
+  <h2>5. Sharing with third parties / processors</h2>
+  <table>
+    <thead>
+      <tr><th>Recipient</th><th>What and why</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Discord</strong> (Discord Netherlands BV / Discord Inc., USA)</td>
+        <td>The platform itself. The bot cannot run without Discord. Discord’s own privacy policy applies in addition.</td>
+      </tr>
+      <tr>
+        <td><strong>Anthropic PBC</strong> (USA)</td>
+        <td>Only on a direct mention (<code>@Roberta</code>), the mention text (and, where applicable, the quoted message it replies to) is sent to Anthropic’s Claude API to generate the reply. Anthropic does not use this content to train its models and retains it only briefly for abuse detection.</td>
+      </tr>
+      <tr>
+        <td><strong>MEE6</strong></td>
+        <td>For the trust check, the Discord user ID is sent to the MEE6 API to look up the level.</td>
+      </tr>
+      <tr>
+        <td><strong>Sinking Yachts</strong> (phish.sinking.yachts)</td>
+        <td>If a message contains a link, only the <em>domain</em> (not the message, not the user) is checked against a known phishing list.</td>
+      </tr>
+      <tr>
+        <td><strong>Hetzner Online GmbH</strong> (Germany)</td>
+        <td>Hosting of the bot as a processor. The server is located in Germany.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>6. Legal basis</h2>
+  <p>
+    Processing is based on Art. 6(1)(f) GDPR (legitimate interest in operating a functioning,
+    safe learning community) and, for opt-in features, Art. 6(1)(a) GDPR (consent). Any consent
+    given can be withdrawn at any time with effect for the future.
+  </p>
+
+  <h2>7. Retention</h2>
+  <p>
+    Personal entries are deleted automatically no later than 30 days after leaving the server.
+    Short-term caches (e.g. the MEE6 level) last only minutes to hours. Aggregated, anonymous
+    statistics contain no personal reference and are retained.
+  </p>
+
+  <h2>8. Your rights</h2>
+  <p>
+    Under the GDPR you have the right to access (Art. 15), rectification (Art. 16), erasure
+    (Art. 17), restriction (Art. 18), data portability (Art. 20) and objection (Art. 21).
+    To exercise them, reach an admin via the server (ticket system or a message to the team).
+    You also have the right to lodge a complaint with a data protection supervisory authority.
+  </p>
+
+  <h2>9. What Roberta does not do</h2>
+  <ul>
+    <li>No advertising, no sale of data, no third-party tracking.</li>
+    <li>No automated decisions with legal effect.</li>
+    <li>No permanent storage of message content (except the cases named in section 3).</li>
+  </ul>
+
+  <h2>10. Changes</h2>
+  <p>
+    This policy may be adjusted when the bot’s functions change. The version published here
+    with the date above applies.
+  </p>
+
+  <hr>
+
+  <h1 id="de">Datenschutzerklärung</h1>
+  <p class="lang-note">für den Discord-Bot <strong>Roberta</strong> auf dem Server „Deutsch lernen!“</p>
+  <p class="updated">Stand: 11. Juni 2026</p>
+
+  <h2>1. Verantwortlicher</h2>
+  <p>
+    Verantwortlich für die Datenverarbeitung durch den Bot „Roberta“ ist der Betreiber
+    des Discord-Servers „Deutsch lernen!“.
+  </p>
+  <div class="box">
+    Kontakt: über einen Admin auf dem Discord-Server „Deutsch lernen!“ — per Ticket-System oder Nachricht an das Team.
+  </div>
+
+  <h2>2. Was ist Roberta?</h2>
+  <p>
+    Roberta ist ein selbst entwickelter, ehrenamtlich betriebener Discord-Bot. Sie läuft
+    ausschließlich auf dem Server „Deutsch lernen!“ und wird nicht öffentlich zum Einladen
+    auf andere Server angeboten. Roberta begrüßt neue Mitglieder, postet wiederkehrende
+    Lern-Inhalte (z. B. „Wort des Tages“), unterstützt die Moderation und beantwortet in
+    wenigen festgelegten Kanälen direkte Erwähnungen (<code>@Roberta</code>).
+  </p>
+
+  <h2>3. Welche Daten verarbeitet Roberta und wozu?</h2>
+  <p>
+    Roberta ist datensparsam ausgelegt. Sie speichert nur, was für ihre Funktionen
+    nötig ist. Im Einzelnen:
+  </p>
+  <table>
+    <thead>
+      <tr><th>Daten</th><th>Zweck</th><th>Speicherung</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Discord-Nutzer-ID, Server-ID, Beitritts- und letzter Aktivitätszeitpunkt, Status der Willkommens-DM</td>
+        <td>Begrüßung neuer Mitglieder und einmalige Willkommens-Nachricht bei Inaktivität</td>
+        <td>In der Bot-Datenbank, gelöscht spätestens 30 Tage nach Verlassen des Servers</td>
+      </tr>
+      <tr>
+        <td>Discord-Anzeigename / Benutzername</td>
+        <td>Anzeige und Zuordnung bei Support-Tickets und bei selbst erstellten temporären Sprach-Kanälen</td>
+        <td>In der Bot-Datenbank, gelöscht spätestens 30 Tage nach Verlassen des Servers</td>
+      </tr>
+      <tr>
+        <td>Bei direkter Erwähnung (<code>@Roberta</code>): ein Ausschnitt der Nachricht und Robertas Antwort</td>
+        <td>Nachvollziehbarkeit für die Moderation (Audit-Log), Missbrauchs- und Sicherheitsschutz</td>
+        <td>In der Bot-Datenbank, gelöscht spätestens 30 Tage nach Verlassen des Servers</td>
+      </tr>
+      <tr>
+        <td>Wenige kurze Selbstaussagen, die ein Nutzer Roberta in der Konversation freiwillig über sich mitteilt (z. B. Lerngrund, Region, Hobby)</td>
+        <td>Damit Roberta in späteren Antworten passend Bezug nehmen kann</td>
+        <td>In der Bot-Datenbank, gelöscht spätestens 30 Tage nach Verlassen des Servers</td>
+      </tr>
+      <tr>
+        <td>Teilnahme an temporären Sprach-Kanälen (Beitritts-/Verlasszeit)</td>
+        <td>Automatisches Schließen leerer Kanäle und Moderations-Übersicht</td>
+        <td>In der Bot-Datenbank, gelöscht spätestens 30 Tage nach Verlassen des Servers</td>
+      </tr>
+      <tr>
+        <td>Zwischengespeichertes Level aus dem MEE6-Bot</td>
+        <td>Vertrauensschwelle: nur etablierte Mitglieder lösen bestimmte Funktionen aus</td>
+        <td>Kurzzeitiger Cache (Minuten bis Stunden)</td>
+      </tr>
+      <tr>
+        <td>Aggregierte, anonyme Statistik (Beitritte/Austritte pro Tag, Nachrichten- und Voice-Minuten pro Kanal pro Tag) <strong>ohne Personenbezug</strong></td>
+        <td>Server-Statistik und Verbesserung des Angebots</td>
+        <td>Dauerhaft, da kein Personenbezug</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    <strong>Nachrichteninhalte werden grundsätzlich nicht dauerhaft gespeichert.</strong>
+    Ausnahmen sind ausschließlich die beiden oben genannten Fälle (Erwähnungs-Ausschnitt im
+    Audit-Log sowie freiwillige Selbstaussagen). Roberta liest laufende Nachrichten nur, um
+    auf direkte Erwähnungen, Befehle und Sicherheitsereignisse (z. B. Spam) zu reagieren;
+    danach werden sie verworfen.
+  </p>
+
+  <h2>4. Privilegierte Discord-Berechtigungen (Privileged Intents)</h2>
+  <p>
+    Damit Roberta funktioniert, nutzt sie zwei von Discord besonders geschützte
+    Berechtigungen:
+  </p>
+  <ul>
+    <li><strong>Server-Mitglieder (Server Members Intent):</strong> nötig, um Beitritte zu
+      erkennen, neue Mitglieder zu begrüßen und Daten ausgetretener Mitglieder fristgerecht
+      zu löschen.</li>
+    <li><strong>Nachrichteninhalt (Message Content Intent):</strong> nötig, um auf direkte
+      Erwähnungen, Befehle und Spam reagieren zu können. Die Inhalte werden dabei nur
+      verarbeitet, nicht dauerhaft gespeichert (siehe Abschnitt 3).</li>
+  </ul>
+
+  <h2>5. Weitergabe an Dritte / Auftragsverarbeiter</h2>
+  <p>Roberta gibt Daten nur weiter, soweit es für den Betrieb erforderlich ist:</p>
+  <table>
+    <thead>
+      <tr><th>Empfänger</th><th>Was und warum</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Discord</strong> (Discord Netherlands BV / Discord Inc., USA)</td>
+        <td>Die Plattform selbst. Ohne Discord läuft der Bot nicht. Es gilt zusätzlich Discords eigene Datenschutzerklärung.</td>
+      </tr>
+      <tr>
+        <td><strong>Anthropic PBC</strong> (USA)</td>
+        <td>Nur bei einer direkten Erwähnung (<code>@Roberta</code>) wird der Erwähnungs-Text (und ggf. der zitierte Bezugs-Beitrag) an Anthropics Claude-Schnittstelle gesendet, um die Antwort zu erzeugen. Anthropic nutzt diese Inhalte nicht zum Training seiner Modelle und speichert sie nur kurzzeitig zur Missbrauchserkennung.</td>
+      </tr>
+      <tr>
+        <td><strong>MEE6</strong></td>
+        <td>Zur Vertrauensprüfung wird die Discord-Nutzer-ID an die MEE6-Schnittstelle übermittelt, um das Level abzufragen.</td>
+      </tr>
+      <tr>
+        <td><strong>Sinking Yachts</strong> (phish.sinking.yachts)</td>
+        <td>Enthält eine Nachricht einen Link, wird nur die <em>Domain</em> (nicht die Nachricht, nicht der Nutzer) gegen eine bekannte Phishing-Liste geprüft.</td>
+      </tr>
+      <tr>
+        <td><strong>Hetzner Online GmbH</strong> (Deutschland)</td>
+        <td>Hosting des Bots als Auftragsverarbeiter. Der Server steht in Deutschland.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>6. Rechtsgrundlage</h2>
+  <p>
+    Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes
+    Interesse am Betrieb einer funktionierenden, sicheren Lern-Community) sowie, bei
+    opt-in-basierten Funktionen, Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Eine erteilte
+    Einwilligung kann jederzeit mit Wirkung für die Zukunft widerrufen werden.
+  </p>
+
+  <h2>7. Speicherdauer</h2>
+  <p>
+    Personenbezogene Einträge werden automatisch spätestens 30 Tage nach dem Verlassen des
+    Servers gelöscht. Kurzzeit-Caches (z. B. das MEE6-Level) bestehen nur wenige Minuten bis
+    Stunden. Aggregierte, anonyme Statistik enthält keinen Personenbezug und bleibt erhalten.
+  </p>
+
+  <h2>8. Deine Rechte</h2>
+  <p>
+    Du hast nach der DSGVO das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16),
+    Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit
+    (Art. 20) sowie Widerspruch (Art. 21). Wende dich dafür an einen Admin auf dem Server
+    (Ticket-System oder Nachricht an das Team). Außerdem hast du ein Beschwerderecht bei
+    einer Datenschutz-Aufsichtsbehörde.
+  </p>
+
+  <h2>9. Was Roberta nicht tut</h2>
+  <ul>
+    <li>Keine Werbung, kein Verkauf von Daten, kein Tracking für Dritte.</li>
+    <li>Keine automatisierten Entscheidungen mit rechtlicher Wirkung.</li>
+    <li>Keine dauerhafte Speicherung von Nachrichteninhalten (außer den in Abschnitt 3 genannten Fällen).</li>
+  </ul>
+
+  <h2>10. Änderungen</h2>
+  <p>
+    Diese Erklärung kann angepasst werden, wenn sich Funktionen des Bots ändern. Es gilt
+    jeweils die hier veröffentlichte Fassung mit dem oben genannten Stand.
+  </p>
+
+  <footer>
+    Roberta · Discord-Bot · „Deutsch lernen!“ · volunteer-run / ehrenamtlich betrieben
+  </footer>
+
+</body>
+</html>
