@@ -71,6 +71,28 @@
     <figcaption><span class="tag">Message Content</span><br>A user mentions @Roberta with a question; Roberta reads it and replies (member name and ID redacted).</figcaption>
   </figure>
 
+  <h2>Temporary voice channels (Message Content)</h2>
+  <p class="meta">
+    When a trusted member mentions @Roberta with a request such as “create a voice channel
+    for 4 people”, Roberta reads the message and creates a temporary voice channel. This
+    relies on the Message Content Intent.
+  </p>
+  <figure>
+    <img src="temp-voice.png" alt="Roberta creates a temporary voice channel on request">
+    <figcaption><span class="tag">Message Content</span><br>A member asks @Roberta to create a voice channel; Roberta reads the request and acts (member name and ID redacted).</figcaption>
+  </figure>
+
+  <h2>Spam and scam detection (Server Members + Message Content)</h2>
+  <p class="meta">
+    On join, Roberta evaluates signals (e.g. a very new account or an auto-generated username
+    pattern) and notifies the moderators. She also reads message content to assist moderation.
+    This uses both intents.
+  </p>
+  <figure>
+    <img src="spam-detection.png" alt="Roberta flags suspicious joins and assists moderation">
+    <figcaption><span class="tag">Server Members</span> <span class="tag">Message Content</span><br>Moderator log: suspicious-join signals and a mention reply (member names and IDs redacted).</figcaption>
+  </figure>
+
   <h2>Bot overview</h2>
   <p class="meta">Roberta’s public bot profile on the server, for context.</p>
   <figure>
